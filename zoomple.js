@@ -25,8 +25,6 @@
 				$img = $el;
 			}
 			function moveOverlay(){
-				console.log("33");
-				console.log($img);
 				if(visible){
 					$overlay.css({	left: $img.offset().left, 
 									top: $img.offset().top, 
