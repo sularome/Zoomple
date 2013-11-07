@@ -22,6 +22,7 @@
 	],
 	"bugs": "https://github.com/sularome/Zoomple/issues",
 	"homepage": "https://github.com/sularome/Zoomple/",
+	"demo": "http://sularome.github.io/Zoomple/",
 	"docs": "https://github.com/sularome/Zoomple/",
 	"download": "https://github.com/sularome/Zoomple/zipball/master",
 	{ "dependencies" :
