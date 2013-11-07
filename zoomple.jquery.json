@@ -1,0 +1,32 @@
+{
+	"name": "zoomple",
+	"title": "Zoomple",
+	"description": "Zoomple – simple jQuery plugin for image magnifying",
+	"keywords": [
+		"zoom",
+		"magnifying",
+		"zoomple",
+		"magnify",
+		"zooming"
+	],
+	"version": "2.0.0",
+	"author": {
+		"name": "Yordan Stoev",
+		"url": "http://yordanstoev.com/"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/sularome/Zoomple/blob/master/LICENSE-MIT.txt"
+		}
+	],
+	"bugs": "https://github.com/sularome/Zoomple/issues",
+	"homepage": "https://github.com/sularome/Zoomple/",
+	"docs": "https://github.com/sularome/Zoomple/",
+	"download": "https://github.com/sularome/Zoomple/zipball/master",
+	{ "dependencies" :
+		{
+			"jquery" : ">=1.9.1"
+		}
+	}
+}
