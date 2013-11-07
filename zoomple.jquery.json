@@ -25,9 +25,9 @@
 	"demo": "http://sularome.github.io/Zoomple/",
 	"docs": "https://github.com/sularome/Zoomple/",
 	"download": "https://github.com/sularome/Zoomple/zipball/master",
-	{ "dependencies" :
-		{
-			"jquery" : ">=1.9.1"
-		}
+	"dependencies" :
+	{
+		"jquery" : ">=1.9.1"
 	}
+	
 }
