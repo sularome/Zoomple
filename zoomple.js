@@ -1,6 +1,6 @@
 /*
 	This plugin is developed by Yordan Stoev
-	Page: http://yordanstoev.com/
+	Page: http://yordanstoev.com/blog/zoomple-simple-jquery-plugin-for-image-zoom/
 	version : 2.0
 */
 (function($){
@@ -248,24 +248,27 @@
 		self.$holder.css({"width" : self.options.zoomWidth + "px","height" : self.options.zoomHeight + "px"});		
 		self.$holder.find(".image_wrap").css({"background" : " url(" + self.options.loaderURL +") 50% 50% no-repeat"});		
 		
-		 
+		
 		var objImagePreloader = new Image()
 			src = imgRefUrl+"?" + new Date().getTime();
 		objImagePreloader.src = src;
-		if(self.stopLoading){
+		if(self.stopLoading){ 
+			self.$holder.addClass("zp-visible");
 			self.$holder.find("img").attr("src",src);
-			self.$holder.find("img").css({"background" : " url("+src+") 50% 50% no-repeat"});					
-			if($.trim(imgDescription).length) self.$holder.find(".caption-wrap").html('<div class="caption">'+imgDescription+'</div>'); 
-		}  
+			//self.$holder.css({"background-image" : " url("+self.options.loaderURL+")"});					
+			if($.trim(imgDescription).length) self.$holder.find(".caption-wrap").html('<div class="caption">'+imgDescription+'</div>');
+		}
+		
 		$(objImagePreloader).load(function() {	
 			if(self.stopLoading){	
+				self.$holder.addClass("zp-visible");
 				self.$holder.find(".image_wrap").css({ "background" : self.options.bgColor});		
-				self.$holder.find("img").css({"width" : "auto","height" : "auto"}).css({"width" : this.width + "px","height" : this.height + "px"}).attr({"src":src, "width" : this.width, "height" : this.height});			
+				self.$holder.find("img").css({"width" : this.width + "px","height" : this.height + "px"}).attr({"src":src, "width" : this.width, "height" : this.height});
+				self.$holder.css({"background-image" : " none"});			
 				if($.trim(imgDescription).length) self.$holder.find(".caption-wrap").html('<div class="caption">'+imgDescription+'</div>'); 
 				var e = { pageX : self.pageX, pageY : self.pageY};
 				if(self.options.showOverlay) self.setupEylet();
 				self.positionZoom(self.$element.find('img'),e);
-				self.$holder.addClass("zp-visible");
 			}
 		}); 
 	}
