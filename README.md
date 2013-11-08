@@ -1,5 +1,8 @@
 # Zoomple – simple jQuery plugin for image magnifying
 
+## DEMO
+[Check out the Demo](http://sularome.github.io/Zoomple/ "Zoomple demo")
+
 ## Settings
 
 Zoomple is a very simple jQuery plugin for image magnifying. It allows you to add a zoom to your image.
