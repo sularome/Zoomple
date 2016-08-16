@@ -1,0 +1,53 @@
+{
+  "author": {
+    "name": "Yordan Stoev",
+    "url": "http://yordanstoev.com/blog/zoomple-simple-jquery-plugin-for-image-zoom/"
+  },
+  "bugs": {
+    "url": "https://github.com/sularome/Zoomple/issues"
+  },
+  "dependencies": {},
+  "description": "Zoomple is a very simple jQuery plugin for image magnifying. It allows you to add a zoom to your image.",
+  "devDependencies": {
+  },
+  "directories": {},
+  "dist": {},
+  "docs": "https://github.com/sularome/Zoomple/blob/master/README.md",
+  "download": "https://github.com/sularome/Zoomple/archive/master.zip",
+  "gitHead": "e1445408bf1fbf3d56bbeaee06fd6c96205f5d2c",
+  "github": "http://sularome.github.io/Zoomple/",
+  "homepage": "http://sularome.github.io/Zoomple/",
+  "keywords": [
+    "ajax",
+    "customizable",
+    "html5",
+    "image",
+    "jquery",
+    "zoom",
+    "simple",
+    "ui",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/sularome/Zoomple/master/LICENSE-MIT.txt"
+    }
+  ],
+  "main": "zoomple.js",
+  "maintainers": [
+    {
+      "name": "Yordan Stoev"
+    }
+  ],
+  "name": "zoomple",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sularome/Zoomple.git"
+  },
+  "scripts": {},
+  "title": "Zoomple – simple jQuery plugin for image magnifying",
+  "version": "2.0.0"
+}
