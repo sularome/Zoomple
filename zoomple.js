@@ -259,7 +259,7 @@
 			if($.trim(imgDescription).length) self.$holder.find(".caption-wrap").html('<div class="caption">'+imgDescription+'</div>');
 		}
 		
-		$(objImagePreloader).load(function() {	
+		$(objImagePreloader).on("load", function() {	
 			if(self.stopLoading){	
 				self.$holder.addClass("zp-visible");
 				self.$holder.find(".image_wrap").css({ "background" : self.options.bgColor});		
