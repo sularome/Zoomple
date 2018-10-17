@@ -121,7 +121,9 @@
 		showOverlay : false, 
 		windowPosition : {x : 'right', y : 'top'},
 		zoomWidth : 300,
-		zoomHeight : 300
+		zoomHeight : 300,
+		appendTimestamp : true,
+		timestamp : new Date().getTime()
 	}
 	Zoomple.prototype.init = function(){
 		// if the overlay is displayed the window can follow the mouse cause the overlay will overlap it
@@ -247,10 +249,9 @@
 		var self = this;	
 		self.$holder.css({"width" : self.options.zoomWidth + "px","height" : self.options.zoomHeight + "px"});		
 		self.$holder.find(".image_wrap").css({"background" : " url(" + self.options.loaderURL +") 50% 50% no-repeat"});		
-		
-		
+		console.log(self.options);
 		var objImagePreloader = new Image()
-			src = imgRefUrl + (imgRefUrl.indexOf("?") > -1?"&":"?") + "time=" + new Date().getTime();
+			src = imgRefUrl + (self.options.appendTimestamp?(((imgRefUrl.indexOf("?") > -1 )?"&":"?") + "timestamp=" + self.options.timestamp):'');
 		objImagePreloader.src = src;
 		if(self.stopLoading){ 
 			self.$holder.addClass("zp-visible");
