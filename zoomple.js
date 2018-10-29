@@ -250,7 +250,7 @@
 		
 		
 		var objImagePreloader = new Image()
-			src = imgRefUrl+"?" + new Date().getTime();
+			src = imgRefUrl + (imgRefUrl.indexOf("?") > -1?"&":"?") + "time=" + new Date().getTime();
 		objImagePreloader.src = src;
 		if(self.stopLoading){ 
 			self.$holder.addClass("zp-visible");
