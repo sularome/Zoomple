@@ -20,6 +20,8 @@ Zoomple is tested in : IE7+ , Firefox, Opera and Chrome
 * **bgColor** - the fill color that should be displayed after the image border
 * **roundedCorners** - displays the magnifying glass in circle (so it looks like actual magnifying glass)
 * **showCursor** – displays cursor of the middle of the window so you can see where your cursor points on the image 
+* **appendTimestamp** – appends timestamp to the url. Default value: true
+* **timestamp** – timestamp on init. Default value: (new Date().getTime())
 
 ## How to use
 ```
